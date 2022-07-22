@@ -1,0 +1,60 @@
+/* Global style*/
+body {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: rgb(18, 4, 110);
+    background-color: rgb(222, 222, 222);
+}
+
+/* Headings*/
+.heading {
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.sub-heading {
+    color: crimson;
+    letter-spacing: 2px;
+    text-align: center, justify;
+}
+.rules {
+    
+}
+
+/* Game layout*/
+.game-area {
+    box-sizing: border-box;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    background-color: white;
+}
+
+.controls-area {
+
+}
+
+.btn {
+    width: 220px;
+    height: 60px;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn--big {
+    padding-top: 10px;
+    border-radius: 50%;
+    
+    border: 10px solid;
+    width: 100px;
+    height: 100px;
+    font-size: 3.2rem;
+    margin: 0 30px;
+    transition: all 0.5s;
+}
