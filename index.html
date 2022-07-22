@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- google fonts-->
+    <!-- google fonts and font awesome-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0b83beeaec.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
@@ -22,7 +23,23 @@
     </div>
 
     <div class="game-area">
-
+        <div class="controls-area">
+            <button class="btn btn--big btn--red">
+                <i class="fa-solid fa-hand-back-fist"></i>
+            </button>
+            <button class="btn btn--big btn--yellow">
+                <i class="fa-solid fa-hand"></i>
+            </button>
+            <button class="btn btn--big btn--green">
+                <i class="fa-solid fa-hand-scissors"></i>
+            </button>
+        </div>
+        <div class="result-area">
+            <span id="">Player 1 played:</span>
+            <span id="">Computor played:</span>
+            <span>Result:</span>
+            <span id=""></span>
+        </div>
     </div>
 
     <div class="score-area">
