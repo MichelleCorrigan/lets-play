@@ -15,14 +15,17 @@ body {
 .sub-heading {
     color: orangered;
     letter-spacing: 2px;
-    text-align: center, justify;
+    margin: 0px;
 }
+
+/* Rules section*/
 .rules {
-    
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    padding: 1%;
+}
+.rules p {
+    line-height: 1rem;
 }
 
 /* Game layout*/
@@ -32,20 +35,36 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
-    background-color: white;
 }
 
-.controls-area {
+/* Result area*/
+.result-area {
     background-color: white;
 }
+#player-choice {
+    float: left;
+}
+#computer-choice {
+    float: right;
+}
 
+/* Score section*/
+.scores1 {
+    float: left;
+    width: 45%;
+}
+.scores2 {
+    float: right;
+    width: 45%;
+}
+
+/* Buttons style and hoover changes*/
 .btn {
     width: 220px;
     height: 60px;
     font-family: 'Merriweather', serif;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    
 }
 
 .btn:focus {
