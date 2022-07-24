@@ -3,7 +3,7 @@ body {
     font-family: 'Merriweather', serif;
     text-align: center;
     color: rgb(18, 4, 110);
-    background-color: rgb(222, 222, 222);
+    background-color: rgb(200, 243, 243);
 }
 
 /* Headings*/
@@ -18,6 +18,13 @@ body {
 }
 .rules {
     
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+.rules p {
+    
 }
 
 /* Game layout*/
@@ -31,7 +38,7 @@ body {
 }
 
 .controls-area {
-
+    background-color: rgb(222, 222, 222);
 }
 
 .btn {
@@ -57,4 +64,34 @@ body {
     font-size: 3.2rem;
     margin: 0 30px;
     transition: all 0.5s;
+}
+
+.btn--red {
+    border-color: red;
+    color: red;
+}
+.btn--red:active,
+.btn--red:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.btn--yellow {
+    border-color: yellow;
+    color: yellow;
+}
+.btn--yellow:active,
+.btn--yellow:hover {
+    background-color: darkorange;
+    color: white;
+}
+
+.btn--green {
+    border-color: green;
+    color: green;
+}
+.btn--green:active,
+.btn--green:hover {
+    background-color: darkgreen;
+    color: white;
 }
