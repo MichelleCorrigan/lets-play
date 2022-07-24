@@ -22,26 +22,27 @@
         <img src="assets/images/rockpaperscissors-photos_ed.webp" alt="rock, paper, scissor hands">
         <h3>Rules:</h3>
         <p>Paper covers rock. Scissors cuts the paper. Rock smashes the scissors.</p>
-        <p>Make your selection below:</p>
+        
     </div>
 
     <div class="game-area">
+        <p>Make your selection below:</p>
         <div class="controls-area">
-            <button data-type="rock" class="btn btn--big btn--red">
+            <button aria-label="rock" data-choice="0" class="btn btn--big btn--red">
                 <i class="fa-solid fa-hand-back-fist"></i>
             </button>
-            <button data-type="paper" class="btn btn--big btn--yellow">
+            <button aria-label="paper" data-choice="1" class="btn btn--big btn--yellow">
                 <i class="fa-solid fa-hand"></i>
             </button>
-            <button data-type="scissors" class="btn btn--big btn--green">
+            <button aria-label="scissors" data-choice="2" class="btn btn--big btn--green">
                 <i class="fa-solid fa-hand-scissors"></i>
             </button>
         </div>
         <div class="result-area">
-            <span id="">Player 1 played:</span>
-            <span id="">Computor played:</span>
-            <span>Result:</span>
-            <span id=""></span>
+            <span id="player-choice">Player 1 played:</span>
+            <span id="computor-choice">Computor played:</span>
+            <span id="result" >Result:</span>
+            
         </div>
     </div>
 
