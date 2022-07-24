@@ -3,16 +3,17 @@ body {
     font-family: 'Merriweather', serif;
     text-align: center;
     color: rgb(18, 4, 110);
-    background-color: rgb(200, 243, 243);
+    background-color: rgb(233, 248, 233);
 }
 
 /* Headings*/
 .heading {
     text-decoration: underline;
     font-size: 2rem;
+    color: orangered;
 }
 .sub-heading {
-    color: crimson;
+    color: orangered;
     letter-spacing: 2px;
     text-align: center, justify;
 }
@@ -22,9 +23,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
-}
-.rules p {
-    
 }
 
 /* Game layout*/
@@ -38,7 +36,7 @@ body {
 }
 
 .controls-area {
-    background-color: rgb(222, 222, 222);
+    background-color: white;
 }
 
 .btn {
