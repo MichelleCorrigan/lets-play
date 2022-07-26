@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
             generateComputerChoice();
             console.log(computerChoice);
             checkResult();
-            resultDisplay.innerHTML = result;
+            
             console.log(result);
         });
     }
@@ -45,7 +45,7 @@ function generateComputerChoice() {
 
 
 function checkResult(computerChoice, playerChoice) { 
-    let resultDisplay = document.getElementById("result"); {
+    let result = this.getElementById("result"); {
     if (computerChoice === 'rock' && playerChoice === 'rock') {
         result = "Draw";
     }
@@ -61,6 +61,9 @@ function checkResult(computerChoice, playerChoice) {
         result = "Computer wins";
         incrementComputerScore()
     }
+    else if (computerChoice === 'paper' && playerChoice === 'paper') {
+        result = "Draw";
+    }
     else if (computerChoice === 'paper' && playerChoice === 'scissors') {
         result = "Player wins";
         incrementPlayerScore()
@@ -69,12 +72,16 @@ function checkResult(computerChoice, playerChoice) {
         result = "Player wins";
         incrementPlayerScore()
     }
-    else if(computerChoice === 'scissors' && playerChoice === 'paper'); {
+    else if (computerChoice === 'scissors' && playerChoice === 'paper') {
         result = "Computer wins";
         incrementComputerScore()
+    }
+    else if (computerChoice === 'scissors' && playerChoice === 'scissors') {
+        result = "Draw";
     }}
-    
 }
+
+
 /** Gets the current player score from the DOM and increments it by 1 */
 function incrementPlayerScore() {
 
