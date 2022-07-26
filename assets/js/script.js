@@ -51,29 +51,42 @@ function checkResult(computerChoice, playerChoice) {
     }
     else if (computerChoice === 'rock' && playerChoice === 'paper') {
         result = "Player wins";
+        incrementPlayerScore()
     }
     else if (computerChoice === 'rock' && playerChoice === 'scissors') {
         result = "Computer wins";
+        incrementComputerScore()
     }
     else if (computerChoice === 'paper' && playerChoice === 'rock') {
         result = "Computer wins";
+        incrementComputerScore()
     }
     else if (computerChoice === 'paper' && playerChoice === 'scissors') {
         result = "Player wins";
+        incrementPlayerScore()
     }
     else if (computerChoice === 'scissors' && playerChoice === 'rock') {
         result = "Player wins";
+        incrementPlayerScore()
     }
     else if(computerChoice === 'scissors' && playerChoice === 'paper'); {
         result = "Computer wins";
+        incrementComputerScore()
     }}
     
 }
-
+/** Gets the current player score from the DOM and increments it by 1 */
 function incrementPlayerScore() {
+
+    let oldScore = parseInt(document.getElementById("player-score").innerText);
+    document.getElementById("player-score").innerText = ++oldScore;
 
 }
 
-function incrementComputorScore() {
+/** Gets the current computer score from the DOM and increments it by 1 */
+function incrementComputerScore() {
+
+    let oldScore = parseInt(document.getElementById("computer-score").innerText);
+    document.getElementById("computer-score").innerText = ++oldScore;
 
 }
