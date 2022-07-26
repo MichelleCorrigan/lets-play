@@ -41,12 +41,7 @@ body {
 .result-area {
     background-color: white;
 }
-#player-choice {
-    float: left;
-}
-#computer-choice {
-    float: right;
-}
+
 
 /* Score section*/
 .scores1 {
