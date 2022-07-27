@@ -35,7 +35,9 @@ let computerChoice;
     
 
     
-    
+/** 
+ * Generate the computers random selection of rock, paper 
+ * or scissors */ 
 function generateComputerChoice() {
      
     computerChoice = choices[Math.floor(Math.random() * 3)];
@@ -43,9 +45,12 @@ function generateComputerChoice() {
             
 }
 
-
+/**
+ *  Compares computer and player choice and decides winning result.
+ *  Updates winners score tally.
+*/
 function checkResult(computerChoice, playerChoice) { 
-    let result = this.getElementById("result"); {
+    let result = document.getElementById("result"); {
     if (computerChoice === 'rock' && playerChoice === 'rock') {
         result = "Draw";
     }
