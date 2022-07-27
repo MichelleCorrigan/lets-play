@@ -41,7 +41,12 @@ body {
 .result-area {
     background-color: white;
 }
-
+.p-choice {
+    float: left;
+}
+.c-choice {
+    float: right;
+}
 
 /* Score section*/
 .scores1 {
