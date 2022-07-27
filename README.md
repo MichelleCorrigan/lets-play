@@ -1,48 +1,50 @@
 # Let's Play! Rock, Paper, Scissors. 
 
-For example, Love Maths is a site that hopes to demonstrate how pure JavaScript works in a real-world context. The site will be targeted toward people who not only love to implement more advanced JavaScript concepts but also maths. Love Maths is a fully responsive JavaScript maths game that will allow users to add, subtract, multiply and divide numbers. 
+Let's Play! is a site with a simple Rock, Paper, Scissors game. This game is designed for adults and children alike. It provides the rules of the game, and buttons to select your choice during play. Users will compete against the completely random selection of the computer, ensuring a fair result.
 
-![Responsice Mockup](media/love_maths_mockup.png)
+<p>
+<img src="./assets/images/readme-images/lets-play_mockup.png" alt="Screens mockup">
+</p>
 
 ## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
 ### Existing Features
 
-- __The Love Maths Logo and Heading__
+- __The Let's Play! Rock, Paper, Scissors Heading and Sub-Heading__
 
-  - Featured at the top of the page, the Love Maths logo and heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
+  - Featured at the top of the page, the Let's Play! heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the site, and directly below it the name of the game they are about to play.
+  <p>
+  <img src="./assets/images/readme-images/heading_sub-heading.png" alt="Heading and sub-heading">
+  </p>
 
-![Logo](media/love_maths_logo.png)
+- __Rules Area__
+
+- This section has a short explanation of the simple rules of the game.
+<p>
+  <img src="./assets/images/readme-images/rules.png" alt="Rules area">
+  </p>
 
 - __The Game Area__
 
-  - This section will allow the user to play the maths game. The user will be able to easily see icons for addition,  subtraction, multiplication, and division games.
-  - The user will be able to select the type of maths game they will be playing by clicking on the different icons. 
+  - This section will allow the user to play the rock, paper, scissors game. 
+  - 
+<p>
+  <img src="./assets/images/readme-images/game-area.png" alt="Games area">
+  </p>
 
-![Game](media/love_maths_icons.png)
 
-- __The Question section__
-
-  - The question section is where the user will be able to see the elementary arithmetic question to answer as part of the game. The user will be able answer the questions in the answer box provide
-  - The user will be able to submit their answer and a pop-up will make it known to the user if they answered correctly. 
-
-![Question](media/love_maths_question.png)
 
 - __The Score Area__
 
   - This section will allow the user to see exactly how many correct and incorrect answers they have provided. 
 
-![score](media/love_maths_answer.png)
 
-For some/all of your features, you may choose to reference the specific project files that implement them.
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+
 
 ### Features Left to Implement
 
-- Another feature idea
+- 
 
 ## Testing 
 
@@ -76,7 +78,7 @@ You will need to mention unfixed bugs and why they were not fixed. This section 
 ## Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In GitHub, select the "lets-play" repository 
+  - Open the repository on GitHub 
   - Navigate to the Settings tab 
   - Select the Pages tab on left-hand side
   - From the source section drop-down menu, select the Main Branch, and save
@@ -84,6 +86,14 @@ You will need to mention unfixed bugs and why they were not fixed. This section 
   - It may be necessary to refresh the page to view the live link
 
 The live link can be found here - https://michellecorrigan.github.io/lets-play/
+
+- To run localy:
+
+  1. Log in to GitHub and click on repository to download [lets-play](github.com/MichelleCorrigan/lets-play)
+  2. Select Code and click Download the ZIP file.
+  3. After download you can extract the file and use it in your local environment
+- Alternatively you can Clone or Fork this repository [lets-play](github.com/MichelleCorrigan/lets-play) into your github account.
+
 
 ## Credits 
 
