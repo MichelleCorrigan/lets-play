@@ -14,8 +14,7 @@ body {
 }
 .sub-heading {
     color: orangered;
-    letter-spacing: 2px;
-    margin: 0px;
+    margin: 1px;
 }
 
 /* Rules section*/
@@ -24,6 +23,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .rules p {
     line-height: 1rem;
 }
@@ -39,24 +39,46 @@ body {
 
 /* Result area*/
 .result-area {
-    background-color: white;
+    background-color:;
+    padding: 3%;
+    box-sizing: border-box;
+    width: 75%;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 20px;
 }
-.p-choice {
-    float: left;
+.result-area p {
+    margin: 7px;
 }
-.c-choice {
-    float: right;
+#result {
+    color: orangered;
 }
 
+
+.footer {
+    position: absolute;
+    width: 100%;
+    min-height: 80px;
+    background-color: white;
+}
 /* Score section*/
 .scores1 {
     float: left;
     width: 45%;
 }
+#player-score {
+    color: orangered;
+}
 .scores2 {
     float: right;
     width: 45%;
 }
+#computer-score {
+    color: orangered;
+}
+
+
 
 /* Buttons style and hoover changes*/
 .btn {
@@ -112,3 +134,23 @@ body {
     background-color: darkgreen;
     color: white;
 }
+
+/* Media Queries*/
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .image-hands {  
+        width: 75%;
+    }
+
+    .game-area {
+        width: 100%;
+    } 
+
+    .controls-area {
+        width: 100%;
+    }
+
+    .btn {
+        width: 27%;
+    }
+  }

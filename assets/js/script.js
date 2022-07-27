@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (let button of buttons) {
         button.addEventListener("click", function() {
-            let playerChoice = this.getAttribute("data-type"); {
+            let playerChoice = this.getAttribute("data-type"); 
                 if (this.getAttribute("data-type") === "0") {
                     playerChoice = "rock";
                 } else if (this.getAttribute("data-type") === "1") {
@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 } else if (this.getAttribute("data-type") === "2") {
                     playerChoice = "scissors";
                 }
-            }
+            
             playerChoiceDisplay.innerHTML = playerChoice;
             generateComputerChoice();
             console.log(computerChoice);
-            checkResult();
+            checkResult(computerChoice, playerChoice);
             
             console.log(result);
         });
@@ -50,40 +50,42 @@ function generateComputerChoice() {
  *  Updates winners score tally.
 */
 function checkResult(computerChoice, playerChoice) { 
-    let result = document.getElementById("result"); {
+    let result = document.getElementById("result");
+    console.log(computerChoice);
+    console.log(playerChoice); 
     if (computerChoice === 'rock' && playerChoice === 'rock') {
-        result = "Draw";
+        result.innerHTML = "Draw";
     }
     else if (computerChoice === 'rock' && playerChoice === 'paper') {
-        result = "Player wins";
+        result.innerHTML = "Player wins";
         incrementPlayerScore()
     }
     else if (computerChoice === 'rock' && playerChoice === 'scissors') {
-        result = "Computer wins";
+        result.innerHTML = "Computer wins";
         incrementComputerScore()
     }
     else if (computerChoice === 'paper' && playerChoice === 'rock') {
-        result = "Computer wins";
+        result.innerHTML = "Computer wins";
         incrementComputerScore()
     }
     else if (computerChoice === 'paper' && playerChoice === 'paper') {
-        result = "Draw";
+        result.innerHTML = "Draw";
     }
     else if (computerChoice === 'paper' && playerChoice === 'scissors') {
-        result = "Player wins";
+        result.innerHTML = "Player wins";
         incrementPlayerScore()
     }
     else if (computerChoice === 'scissors' && playerChoice === 'rock') {
-        result = "Player wins";
+        result.innerHTML = "Player wins";
         incrementPlayerScore()
     }
     else if (computerChoice === 'scissors' && playerChoice === 'paper') {
-        result = "Computer wins";
+        result.innerHTML = "Computer wins";
         incrementComputerScore()
     }
     else if (computerChoice === 'scissors' && playerChoice === 'scissors') {
-        result = "Draw";
-    }}
+        result.innerHTML = "Draw";
+    }
 }
 
 
