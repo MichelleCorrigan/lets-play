@@ -16,25 +16,18 @@ document.addEventListener("DOMContentLoaded", function() {
             
             playerChoiceDisplay.innerHTML = playerChoice;
             generateComputerChoice();
-            console.log(computerChoice);
             checkResult(computerChoice, playerChoice);
             
-            console.log(result);
         });
     }
 });
 
 const playerChoiceDisplay = document.getElementById("player-choice");
 const computerChoiceDisplay = document.getElementById("computer-choice");
-const playerScore = document.getElementById("player-score");
-const computerScore = document.getElementById("computer-score");
-let resultDisplay = document.getElementById("result");
 const choices = ["rock", "paper", "scissors"];
-let playerChoice;
 let computerChoice;
     
-
-    
+ 
 /** 
  * Generate the computers random selection of rock, paper 
  * or scissors */ 
@@ -44,6 +37,7 @@ function generateComputerChoice() {
         computerChoiceDisplay.innerHTML = computerChoice;
             
 }
+
 
 /**
  *  Compares computer and player choice and decides winning result.
@@ -58,49 +52,51 @@ function checkResult(computerChoice, playerChoice) {
     }
     else if (computerChoice === 'rock' && playerChoice === 'paper') {
         result.innerHTML = "Player wins";
-        incrementPlayerScore()
+        incrementPlayerScore();
     }
     else if (computerChoice === 'rock' && playerChoice === 'scissors') {
         result.innerHTML = "Computer wins";
-        incrementComputerScore()
+        incrementComputerScore();
     }
     else if (computerChoice === 'paper' && playerChoice === 'rock') {
         result.innerHTML = "Computer wins";
-        incrementComputerScore()
+        incrementComputerScore();
     }
     else if (computerChoice === 'paper' && playerChoice === 'paper') {
         result.innerHTML = "Draw";
     }
     else if (computerChoice === 'paper' && playerChoice === 'scissors') {
         result.innerHTML = "Player wins";
-        incrementPlayerScore()
+        incrementPlayerScore();
     }
     else if (computerChoice === 'scissors' && playerChoice === 'rock') {
         result.innerHTML = "Player wins";
-        incrementPlayerScore()
+        incrementPlayerScore();
     }
     else if (computerChoice === 'scissors' && playerChoice === 'paper') {
         result.innerHTML = "Computer wins";
-        incrementComputerScore()
+        incrementComputerScore();
     }
     else if (computerChoice === 'scissors' && playerChoice === 'scissors') {
         result.innerHTML = "Draw";
     }
+    console.log(result);
 }
 
 
 /** Gets the current player score from the DOM and increments it by 1 */
 function incrementPlayerScore() {
 
-    let oldScore = parseInt(document.getElementById("player-score").innerText);
-    document.getElementById("player-score").innerText = ++oldScore;
+    let playerScore = parseInt(document.getElementById("player-score").innerText);
+    document.getElementById("player-score").innerText = ++playerScore;
+
 
 }
 
 /** Gets the current computer score from the DOM and increments it by 1 */
 function incrementComputerScore() {
 
-    let oldScore = parseInt(document.getElementById("computer-score").innerText);
-    document.getElementById("computer-score").innerText = ++oldScore;
+    let computerScore = parseInt(document.getElementById("computer-score").innerText);
+    document.getElementById("computer-score").innerText = ++computerScore;
 
 }

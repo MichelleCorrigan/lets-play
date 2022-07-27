@@ -28,6 +28,7 @@ body {
     line-height: 1rem;
 }
 
+
 /* Game layout*/
 .game-area {
     box-sizing: border-box;
@@ -37,9 +38,9 @@ body {
     padding: 1%;
 }
 
+
 /* Result area*/
 .result-area {
-    background-color:;
     padding: 3%;
     box-sizing: border-box;
     width: 75%;
@@ -48,36 +49,41 @@ body {
     margin-right: auto;
     line-height: 20px;
 }
+
 .result-area p {
     margin: 7px;
 }
+
 #result {
     color: orangered;
 }
 
 
+/* Footer and score section*/
 .footer {
     position: absolute;
     width: 100%;
     min-height: 80px;
     background-color: white;
 }
-/* Score section*/
+
 .scores1 {
     float: left;
     width: 45%;
 }
+
 #player-score {
     color: orangered;
 }
+
 .scores2 {
     float: right;
     width: 45%;
 }
+
 #computer-score {
     color: orangered;
 }
-
 
 
 /* Buttons style and hoover changes*/
@@ -96,7 +102,6 @@ body {
 .btn--big {
     padding-top: 10px;
     border-radius: 50%;
-    
     border: 10px solid;
     width: 100px;
     height: 100px;
@@ -109,6 +114,7 @@ body {
     border-color: red;
     color: red;
 }
+
 .btn--red:active,
 .btn--red:hover {
     background-color: darkred;
@@ -119,6 +125,7 @@ body {
     border-color: yellow;
     color: yellow;
 }
+
 .btn--yellow:active,
 .btn--yellow:hover {
     background-color: darkorange;
@@ -129,11 +136,13 @@ body {
     border-color: green;
     color: green;
 }
+
 .btn--green:active,
 .btn--green:hover {
     background-color: darkgreen;
     color: white;
 }
+
 
 /* Media Queries*/
 @media (min-width: 320px) and (max-width: 480px) {
