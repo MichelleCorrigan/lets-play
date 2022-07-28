@@ -61,7 +61,8 @@ Let's Play! is a site with a simple Rock, Paper, Scissors game. This game is des
 
 -__Future Ideas__
 
-- In the future more simple games could be added to give variety to the site eg. Tic Tac Toe, a memory game etc.
+- In the future I would like to add a function to end the game after either the player score or computer score reaches ten points, declare an overall winner, then reset the game.
+- More simple games could be added to give variety to the site eg. Tic Tac Toe, a memory game etc.
 - A score table could be added so players could log their scores.
 
 ## Testing 
